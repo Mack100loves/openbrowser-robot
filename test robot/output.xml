@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-05-11T21:00:39.166795" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Testcase" source="/Users/mack100loves/Desktop/test robot /testcase/login_testcase.robot">
+<test id="s1-t1" name="All login chrome" line="7">
+<kw name="Open Login Page" owner="login_keyword">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:39.410543" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-11T21:00:39.410260" elapsed="2.434145"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2024-05-11T21:00:39.409289" elapsed="2.437202"/>
+</kw>
+<kw name="Click Register" owner="login_keyword">
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[1]/div/div[3]/div[3]/button[2]</arg>
+<arg>สมัครสมาชิก</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-05-11T21:00:41.850206" elapsed="1.131652"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:42.982528" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[2]/div/div[1]/div/div[3]/div[3]/button[2]'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[1]/div/div[3]/div[3]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:42.982249" elapsed="1.027723"/>
+</kw>
+<status status="PASS" start="2024-05-11T21:00:41.848938" elapsed="2.161226"/>
+</kw>
+<kw name="Wait for Login Form" owner="login_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.010666" elapsed="0.074431"/>
+</kw>
+<status status="PASS" start="2024-05-11T21:00:44.010406" elapsed="0.074871"/>
+</kw>
+<kw name="Fill Login Form" owner="login_keyword">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:44.086087" level="INFO">Typing text 'koonfozenflower@gmail.com' into text field 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[1]/div/div[1]/input'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[1]/div/div[1]/input</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.085871" elapsed="0.407692"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:44.496208" level="INFO">Typing text 'pl' into text field 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[1]/div/div[1]/input'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[1]/div/div[1]/input</arg>
+<arg>pl</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.494510" elapsed="0.075687"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:44.570883" level="INFO">Typing text 'ljrl' into text field 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[2]/div/div[1]/input'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[2]/div[2]/div/div[1]/input</arg>
+<arg>ljrl</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.570446" elapsed="0.064044"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:44.634940" level="INFO">Typing text '0979914787' into text field 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[3]/div/div[1]/input'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[3]/div/div[1]/input</arg>
+<arg>0979914787</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.634714" elapsed="0.115384"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:44.751235" level="INFO">Typing text 'Mackzanaruk5' into text field 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[4]/div/div[1]/input'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[4]/div/div[1]/input</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.750730" elapsed="0.133129"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:44.884564" level="INFO">Typing text 'Mackzanaruk5' into text field 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[5]/div/div[1]/input'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[5]/div/div[1]/input</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.884192" elapsed="0.066633"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:44.951427" level="INFO">Selecting checkbox 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[6]/label/input'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[6]/label/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:44.951139" elapsed="0.072745"/>
+</kw>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-11T21:00:44.085533" elapsed="0.938671"/>
+</kw>
+<kw name="Submit Login Form" owner="login_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-11T21:00:45.025450" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button'.</msg>
+<arg>xpath=//*[@id="__next"]/div[2]/div/div[2]/div/form/div/div[7]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-11T21:00:45.025121" elapsed="0.086716"/>
+</kw>
+<status status="PASS" start="2024-05-11T21:00:45.024653" elapsed="0.087381"/>
+</kw>
+<status status="PASS" start="2024-05-11T21:00:39.408721" elapsed="5.703598"/>
+</test>
+<status status="PASS" start="2024-05-11T21:00:39.169946" elapsed="5.943135"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Testcase">Login Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
